@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cosmétique.css">
+    <title>produit cosmétique</title>
+</head>
+<body>
+    <nav>
+        <img src="logo.jpg" alt="logo">
+        <h1>Produit de beauté
+            pour les profissionels </h1>
+    </nav>
+    <div class="background"></div>
+    <div class="style">
+        <div class="label">
+            <Label for="Nom">Nom:</Label><br><br><br>
+            <Label for="Marque">Marque:</Label> <br><br>
+            <Label for="Prix">Prix:</Label><br><br><br>
+            <Label for="Date">Date:</Label><br><br><br>
+            <Label for="Type">Type:</Label><br><br><br>
+            <Label for="Promotion">Promotion:</Label>
+        </div>
+        <div class="input">
+            <input type="text" id="nom" name="nom" placeholder="Nom" ><br><br>
+            <p id="nomAffich"></p>
+            <select name="Marque" id="marque"><br>
+                <option value="">Select une marque</option>
+                <option value="Dior">Dior</option>
+                <option value="Zara">Zara</option>
+                <option value="Coco chanel">Coco chanel</option>
+                <option value="Morganic">Morganic</option>
+                <option value="Gucci">Gucci</option>
+            </select><br><br>
+            <p id="marqueAffich"></p>
+            <input type="text" id="Prix" name="Prix" placeholder="Prix"><br><br>
+            <p id="prixaffich"></p>
+            <input type="date" id="date" placeholder="Date"><br><br>
+            <p id="dateAffich"></p>
+            <select id="Type"><br>
+                <option value="">type</option>
+                <option value="parfum">Hygiène et toilette</option>
+                <option value="makeup">Produits solaires </option>
+                <option value="Beauté des mains">Beauté des mains </option>
+                <option value="Produits de maquillage">Produits de maquillage</option>
+                <option value="Entretien capillaires">Entretien capillaires</option>
+                <option value="soins esthétiques">soins esthétiques</option>
+                <option value="Parfums">Parfums</option>
+            </select><br><br>
+            <p id="typeAffiche"></p>
+            <div class="radio">
+                <input type="radio" name="Promo" id="promotion" value="oui">Oui
+                <input type="radio" name="Promo" id="promotions" value="non">Non
+                <p id="radioAffich"></p>
+            </div>
+            <div id="button">
+                <input type="button" id="button1" onclick="produit()" value="Ajouter">
+                <input type="button" id="button2" onclick="MODEFIER2()" value="Modifier">
+            </div>
+            
+        </div>
+    </div>
+    <div  class="style">
+        <table id="tableau">
+            <tr>
+                <th>Nom</th>
+                <th>Marque</th>
+                <th>Prix</th>
+                <th>Date</th>
+                <th>Type</th>
+                <th>Est ce qui il ya une promotion ?</th>
+                <th>Actions</th>
+            </tr>
+            <tbody id="tbody"></tbody>
+          </table>
+         
+
+    </div>
+
+<script src="cosmétique.js"></script>
+</body>
+</html>
